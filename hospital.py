@@ -1,10 +1,10 @@
 #Hoja 10
 #Jennifer  Sandoval  18962
-#Saul
+#Saul Contreras
 #Michele Benevuto
 #Algoritmos y estructura de datos 
 
-from test import *
+from Database import *
 
 print ("Bienvenido")
 print("A continuacion se le presentan las acciones que puede realizar")
@@ -33,16 +33,18 @@ while (opcion!="8"):
         doctorv= input ("Ingrese el nombre del doctor visitado ")
         fecha= input ("Ingrese la fecha de la visita ")
         medicina= input ("Ingrese la medicina recetada ")
-        #link(Doctor,Paciente,doctorv,paciente,"visitó")
+        #link(Doctor,Paciente,doctorv,paciente,"visited")
     if(opcion=="4"):
         espe= input ("Ingrese la especialidad que desea buscar ")
         #getNode(Doctor,espe)
     if(opcion=="5"):
         persona1= input ("Ingrese el nombre de la primera persona ")
         persona2= input ("Ingrese el nombre de la segunda persona ")
-        #link(Paciente,Paciente,persona1,persona2,"conoce a")
-    #if(opcion=="6"):
-        #Mostrar recomendacion
-    #if(opcion=="7"):
-        #Mostrar recomendacion
+        #link(Paciente,Paciente,persona1,persona2,"is_friend_with")
+    if(opcion=="6"):
+        especialidade= input ("Ingrese la especialidad del medico")
+        #getRecomendations()
+    if(opcion=="7"):
+        especialidade= input ("Ingrese la especialidad del medico")
+        #getRecomendations()
     opcion= input ("Ingrese  el numero de la opcion que desea realizar ")
